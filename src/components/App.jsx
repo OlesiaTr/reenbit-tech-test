@@ -1,16 +1,23 @@
+// Core
+import { lazy } from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
+
+// Components
+
+// Pages
+// const Home = lazy(() => import('../pages/Home'));
+const CharactersFeed = lazy(() => import('../pages/CharactersFeed'));
+const CharacterDetails = lazy(() => import('../pages/CharacterDetails'));
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Routes>
+      <Route path="/">
+        {/* <Route index element={<Home/> } /> */}
+        <Route path="feed" element={<CharactersFeed />} />
+        <Route path="feed/:characterId" element={<CharacterDetails />} />
+        <Route path="*" element={<Navigate to={'/'} />} />
+      </Route>
+    </Routes>
   );
 };
