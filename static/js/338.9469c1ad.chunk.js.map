@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/338.9469c1ad.chunk.js","mappings":"0JAIA,UAJuB,WACrB,OAAO,uBACR,C","sources":["pages/CharactersFeed.jsx"],"sourcesContent":["const CharactersFeed = () => {\n  return <></>;\n};\n\nexport default CharactersFeed;\n"],"names":[],"sourceRoot":""}
