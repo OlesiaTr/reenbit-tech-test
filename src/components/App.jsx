@@ -6,7 +6,9 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 
 // Pages
 // const Home = lazy(() => import('../pages/Home'));
-const CharactersFeed = lazy(() => import('../pages/CharactersFeed'));
+const CharactersFeed = lazy(() =>
+  import('../pages/CharactersFeed/CharactersFeed')
+);
 const CharacterDetails = lazy(() => import('../pages/CharacterDetails'));
 
 export const App = () => {
