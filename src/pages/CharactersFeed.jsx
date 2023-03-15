@@ -1,5 +1,7 @@
+import { Hero } from 'components/Hero';
+
 const CharactersFeed = () => {
-  return <></>;
+  return <Hero />;
 };
 
 export default CharactersFeed;
