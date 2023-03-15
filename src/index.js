@@ -1,10 +1,19 @@
+// Core
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+
+// Components
 import { App } from 'components/App';
-import './index.css';
+
+// Style
+import { GlobalStyle } from 'components/GlobalStyle';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename="/reenbit-tech-test">
+      <App />
+      <GlobalStyle />
+    </BrowserRouter>
   </React.StrictMode>
 );
