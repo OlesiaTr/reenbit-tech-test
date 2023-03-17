@@ -9,17 +9,19 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 const CharactersFeed = lazy(() =>
   import('../pages/CharactersFeed/CharactersFeed')
 );
-const CharacterDetails = lazy(() => import('../pages/CharacterDetails'));
+const CharacterInfo = lazy(() =>
+  import('../pages/CharacterInfo/CharacterInfo')
+);
 
 export const App = () => {
   return (
     <Routes>
-      <Route path="/">
-        {/* <Route index element={<Home/> } /> */}
-        <Route path="feed" element={<CharactersFeed />} />
-        <Route path="feed/:characterId" element={<CharacterDetails />} />
-        <Route path="*" element={<Navigate to={'/'} />} />
-      </Route>
+      {/* <Route path="/"> */}
+      {/* <Route index element={<Home/> } /> */}
+      <Route path="feed" element={<CharactersFeed />} />
+      <Route path="feed/:characterId" element={<CharacterInfo />} />
+      <Route path="*" element={<Navigate to={'/'} />} />
+      {/* </Route> */}
     </Routes>
   );
 };
