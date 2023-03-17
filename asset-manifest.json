@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/reenbit-tech-test/static/css/main.c3d5249d.css",
-    "main.js": "/reenbit-tech-test/static/js/main.ee51976c.js",
-    "static/js/251.210e8557.chunk.js": "/reenbit-tech-test/static/js/251.210e8557.chunk.js",
-    "static/js/595.8a921371.chunk.js": "/reenbit-tech-test/static/js/595.8a921371.chunk.js",
-    "static/js/410.ed315867.chunk.js": "/reenbit-tech-test/static/js/410.ed315867.chunk.js",
+    "main.css": "/reenbit-tech-test/static/css/main.6f6c58db.css",
+    "main.js": "/reenbit-tech-test/static/js/main.22eeef41.js",
+    "static/js/578.2c2d945c.chunk.js": "/reenbit-tech-test/static/js/578.2c2d945c.chunk.js",
+    "static/js/595.36e4bfe2.chunk.js": "/reenbit-tech-test/static/js/595.36e4bfe2.chunk.js",
+    "static/js/997.cdd15f35.chunk.js": "/reenbit-tech-test/static/js/997.cdd15f35.chunk.js",
     "static/media/hero-desk-x2.png": "/reenbit-tech-test/static/media/hero-desk-x2.2b86d11b87b8edd41dde.png",
     "static/media/hero-mob-x2.png": "/reenbit-tech-test/static/media/hero-mob-x2.e02ebdd8dd24313b2911.png",
     "static/media/hero-desk-x1.png": "/reenbit-tech-test/static/media/hero-desk-x1.7025a60a8397a5bdc91d.png",
     "static/media/hero-mob-x1.png": "/reenbit-tech-test/static/media/hero-mob-x1.094b133bac8a160da218.png",
     "index.html": "/reenbit-tech-test/index.html",
-    "main.c3d5249d.css.map": "/reenbit-tech-test/static/css/main.c3d5249d.css.map",
-    "main.ee51976c.js.map": "/reenbit-tech-test/static/js/main.ee51976c.js.map",
-    "251.210e8557.chunk.js.map": "/reenbit-tech-test/static/js/251.210e8557.chunk.js.map",
-    "595.8a921371.chunk.js.map": "/reenbit-tech-test/static/js/595.8a921371.chunk.js.map",
-    "410.ed315867.chunk.js.map": "/reenbit-tech-test/static/js/410.ed315867.chunk.js.map"
+    "main.6f6c58db.css.map": "/reenbit-tech-test/static/css/main.6f6c58db.css.map",
+    "main.22eeef41.js.map": "/reenbit-tech-test/static/js/main.22eeef41.js.map",
+    "578.2c2d945c.chunk.js.map": "/reenbit-tech-test/static/js/578.2c2d945c.chunk.js.map",
+    "595.36e4bfe2.chunk.js.map": "/reenbit-tech-test/static/js/595.36e4bfe2.chunk.js.map",
+    "997.cdd15f35.chunk.js.map": "/reenbit-tech-test/static/js/997.cdd15f35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3d5249d.css",
-    "static/js/main.ee51976c.js"
+    "static/css/main.6f6c58db.css",
+    "static/js/main.22eeef41.js"
   ]
 }

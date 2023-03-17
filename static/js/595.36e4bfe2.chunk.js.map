@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/595.36e4bfe2.chunk.js","mappings":"2JAIA,UAJyB,WACvB,OAAO,uBACR,C","sources":["pages/CharacterDetails.jsx"],"sourcesContent":["const CharacterDetails = () => {\n  return <></>;\n};\n\nexport default CharacterDetails;\n"],"names":[],"sourceRoot":""}
