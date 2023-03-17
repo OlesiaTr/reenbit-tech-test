@@ -11,6 +11,8 @@ and Suspense.
 - Modern normalize
 - Prop-types
 - Styled components
+- React loader spinner
+- React hot toast
 
 ## Preparing for work
 

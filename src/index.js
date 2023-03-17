@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { App } from 'components/App';
 
 // Style
+import './fonts.css';
 import { GlobalStyle } from 'components/GlobalStyle';
 
 ReactDOM.createRoot(document.getElementById('root')).render(

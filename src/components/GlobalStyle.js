@@ -15,10 +15,8 @@ html {
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  color: #212121;
-background-color: rgb(245, 244, 250);
+  font-family: Roboto, sans-serif;
+  color: rgba(0, 0, 0, 0.87);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
