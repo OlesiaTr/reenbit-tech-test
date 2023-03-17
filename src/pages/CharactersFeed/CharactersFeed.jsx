@@ -1,9 +1,13 @@
 // Core
 import { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { toast, Toaster } from 'react-hot-toast';
 
 // API
-import { getCharactersFeed } from 'services/rickAndMortyAPI';
+import {
+  getCharactersFeed,
+  getCharactersByName,
+} from 'services/rickAndMortyAPI';
 
 // Components
 import { Loader } from 'components/Loader';
@@ -18,6 +22,9 @@ const CharactersFeed = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [characters, setCharacters] = useState([]);
+
+  const [searchParams] = useSearchParams();
+  const characterName = searchParams.get('name') ?? '';
 
   useEffect(() => {
     const getCharacters = async () => {
@@ -36,6 +43,28 @@ const CharactersFeed = () => {
   }, []);
 
   useEffect(() => {
+    if (characterName === '') return;
+
+    const filterByName = async () => {
+      try {
+        setLoading(true);
+        setError('');
+        const result = await getCharactersByName(characterName);
+        setCharacters(result);
+        setLoading(false);
+        if (result.length < 1)
+          setError(
+            'Sorry, we didn`t find any characters according to your request.'
+          );
+      } catch (error) {
+        setError('Oops, something went wrong. Please, try again later!');
+      }
+    };
+
+    filterByName();
+  }, [characterName]);
+
+  useEffect(() => {
     if (!error) return;
     toast.error(error);
   }, [error]);
@@ -48,7 +77,8 @@ const CharactersFeed = () => {
       <Container>
         <Hero />
         <SearchBox />
-        {characters.length > 0 && <CharacterList data={characters} />}
+        {(characters.length > 0 && <CharacterList data={characters} />) ||
+          (characterName !== '' && <CharacterList data={characters} />)}
       </Container>
     </main>
   );

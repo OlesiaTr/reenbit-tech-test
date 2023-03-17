@@ -8,9 +8,21 @@ axios.defaults.baseURL = 'https://rickandmortyapi.com/api';
 export const getCharactersFeed = async () => {
   try {
     const { data } = await axios.get('./character/?page=2');
-    return normalizedList(data.results);
+    const result = sortByName(data.results);
+    return normalizedList(result);
   } catch (error) {
-    console.log('error:', error.message);
+    console.error('error:', error.message);
+  }
+};
+
+export const getCharactersByName = async name => {
+  console.log(name);
+  try {
+    const { data } = await axios.get(`./character/?name=${name}`);
+    const result = sortByName(data.results);
+    return normalizedList(result);
+  } catch (error) {
+    console.error('error:', error.message);
   }
 };
 
@@ -19,9 +31,12 @@ export const getCharacterDetails = async id => {
     const { data } = await axios.get(`./character/${id}`);
     return data;
   } catch (error) {
-    console.log('error:', error.message);
+    console.error('error:', error.message);
   }
 };
+
+const sortByName = characters =>
+  characters.sort((a, b) => a.name.localeCompare(b.name));
 
 const normalizedList = feed =>
   feed.map(({ id, name, species, image }) => ({
