@@ -1,36 +1,45 @@
 // Styles
-import { Container } from './CharacterDetails.styled';
+import {
+  Container,
+  Img,
+  Name,
+  Info,
+  List,
+  Item,
+  InfoTitles,
+  InfoDesc,
+} from './CharacterDetails.styled';
 
 export const CharacterDetails = ({ data }) => {
   const { name, image, gender, species, status, origin, type } = data;
 
   return (
     <Container>
-      <img src={image} alt={name} />
-      <h1>{name}</h1>
-      <h2>Informations</h2>
-      <ul>
-        <li>
-          <h3>Gender</h3>
-          <p>{gender ? gender : 'Unknown yet'}</p>
-        </li>
-        <li>
-          <h3>Status</h3>
-          <p>{status ? status : 'Unknown yet'}</p>
-        </li>
-        <li>
-          <h3>Specie</h3>
-          <p>{species ? species : 'Unknown yet'}</p>
-        </li>
-        <li>
-          <h3>Origin</h3>
-          <p>{origin.name ? origin.name : 'Unknown yet'}</p>
-        </li>
-        <li>
-          <h3>Type</h3>
-          <p>{type ? type : 'Unknown yet'}</p>
-        </li>
-      </ul>
+      <Img src={image} alt={name} />
+      <Name>{name}</Name>
+      <Info>Informations</Info>
+      <List>
+        <Item>
+          <InfoTitles>Gender</InfoTitles>
+          <InfoDesc>{gender ? gender : 'Unknown yet'}</InfoDesc>
+        </Item>
+        <Item>
+          <InfoTitles>Status</InfoTitles>
+          <InfoDesc>{status ? status : 'Unknown yet'}</InfoDesc>
+        </Item>
+        <Item>
+          <InfoTitles>Specie</InfoTitles>
+          <InfoDesc>{species ? species : 'Unknown yet'}</InfoDesc>
+        </Item>
+        <Item>
+          <InfoTitles>Origin</InfoTitles>
+          <InfoDesc>{origin.name ? origin.name : 'Unknown yet'}</InfoDesc>
+        </Item>
+        <Item>
+          <InfoTitles>Type</InfoTitles>
+          <InfoDesc>{type ? type : 'Unknown yet'}</InfoDesc>
+        </Item>
+      </List>
     </Container>
   );
 };

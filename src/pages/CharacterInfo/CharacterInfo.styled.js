@@ -9,4 +9,8 @@ export const Main = styled.main`
     margin: 21px auto 142px;
     padding: 0 50px;
   }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+  }
 `;

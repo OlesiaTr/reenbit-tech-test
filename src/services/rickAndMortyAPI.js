@@ -16,7 +16,6 @@ export const getCharactersFeed = async () => {
 };
 
 export const getCharactersByName = async name => {
-  console.log(name);
   try {
     const { data } = await axios.get(`./character/?name=${name}`);
     const result = sortByName(data.results);

@@ -18,7 +18,7 @@ export const CharacterList = ({ data }) => {
     <Container>
       {data.map(({ id, name, image, species }) => (
         <CardWrapper key={id}>
-          <Link to={`/feed/${id}`} state={{ from: location }}>
+          <Link to={`/character/${id}`} state={{ from: location }}>
             <Img src={image} alt={name} />
             <InfoWrapper>
               <Name>{name}</Name>

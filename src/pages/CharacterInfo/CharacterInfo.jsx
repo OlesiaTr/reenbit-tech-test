@@ -4,7 +4,7 @@ import { useLocation, useParams } from 'react-router-dom';
 import { toast, Toaster } from 'react-hot-toast';
 
 // API
-import { getCharacterDetails } from '../../services/rickAndMortyAPI';
+import { getCharacterDetails } from 'services/rickAndMortyAPI';
 
 // Components
 import { BackLink } from 'components/BackLink';
