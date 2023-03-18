@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/reenbit-tech-test/static/css/main.b0a56b3a.css",
-    "main.js": "/reenbit-tech-test/static/js/main.34763eeb.js",
-    "static/js/420.dbef9cd2.chunk.js": "/reenbit-tech-test/static/js/420.dbef9cd2.chunk.js",
-    "static/js/506.e05cd02d.chunk.js": "/reenbit-tech-test/static/js/506.e05cd02d.chunk.js",
+    "main.js": "/reenbit-tech-test/static/js/main.23dcbe1e.js",
+    "static/js/420.bb3fd83b.chunk.js": "/reenbit-tech-test/static/js/420.bb3fd83b.chunk.js",
+    "static/js/506.00dea9d2.chunk.js": "/reenbit-tech-test/static/js/506.00dea9d2.chunk.js",
     "static/js/724.b05e5d6d.chunk.js": "/reenbit-tech-test/static/js/724.b05e5d6d.chunk.js",
     "static/js/252.a5acebc3.chunk.js": "/reenbit-tech-test/static/js/252.a5acebc3.chunk.js",
     "static/js/820.370b7f42.chunk.js": "/reenbit-tech-test/static/js/820.370b7f42.chunk.js",
@@ -13,15 +13,15 @@
     "static/media/hero-mob-x1.png": "/reenbit-tech-test/static/media/hero-mob-x1.094b133bac8a160da218.png",
     "index.html": "/reenbit-tech-test/index.html",
     "main.b0a56b3a.css.map": "/reenbit-tech-test/static/css/main.b0a56b3a.css.map",
-    "main.34763eeb.js.map": "/reenbit-tech-test/static/js/main.34763eeb.js.map",
-    "420.dbef9cd2.chunk.js.map": "/reenbit-tech-test/static/js/420.dbef9cd2.chunk.js.map",
-    "506.e05cd02d.chunk.js.map": "/reenbit-tech-test/static/js/506.e05cd02d.chunk.js.map",
+    "main.23dcbe1e.js.map": "/reenbit-tech-test/static/js/main.23dcbe1e.js.map",
+    "420.bb3fd83b.chunk.js.map": "/reenbit-tech-test/static/js/420.bb3fd83b.chunk.js.map",
+    "506.00dea9d2.chunk.js.map": "/reenbit-tech-test/static/js/506.00dea9d2.chunk.js.map",
     "724.b05e5d6d.chunk.js.map": "/reenbit-tech-test/static/js/724.b05e5d6d.chunk.js.map",
     "252.a5acebc3.chunk.js.map": "/reenbit-tech-test/static/js/252.a5acebc3.chunk.js.map",
     "820.370b7f42.chunk.js.map": "/reenbit-tech-test/static/js/820.370b7f42.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0a56b3a.css",
-    "static/js/main.34763eeb.js"
+    "static/js/main.23dcbe1e.js"
   ]
 }
