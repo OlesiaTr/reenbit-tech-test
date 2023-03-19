@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 27px;
 `;
 
 export const Greeting = styled.p`
@@ -28,8 +29,6 @@ export const Form = styled.form`
   width: 350px;
   display: flex;
   flex-direction: column;
-
-  margin-bottom: 27px;
 `;
 
 export const Label = styled.label`

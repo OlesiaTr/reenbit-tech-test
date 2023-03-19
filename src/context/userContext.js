@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 import {
   createUserWithEmailAndPassword,
+  FacebookAuthProvider,
   GithubAuthProvider,
   GoogleAuthProvider,
   onAuthStateChanged,
@@ -88,6 +89,18 @@ export const UserContextProvider = ({ children }) => {
     }
   };
 
+  const signInWithFacebook = async (email, password) => {
+    try {
+      setLoading(true);
+      setError('');
+      await signInWithPopup(auth, new FacebookAuthProvider());
+      setLoading(false);
+      navigate('/');
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
+
   const signOutUser = () => {
     signOut(auth);
     navigate('/login');
@@ -101,6 +114,7 @@ export const UserContextProvider = ({ children }) => {
     signIn,
     signInWithGoogle,
     signInWithGithub,
+    signInWithFacebook,
     signOutUser,
   };
 

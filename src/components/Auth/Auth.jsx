@@ -8,7 +8,7 @@ import { SignIn } from 'components/SignIn';
 import { SignUp } from 'components/SignUp';
 
 // Styles
-import { Container, Btn } from './Auth.styled';
+import { Container, Btn, Divider, Span, P } from './Auth.styled';
 
 export const Auth = () => {
   const [index, setIndex] = useState(false);
@@ -16,7 +16,8 @@ export const Auth = () => {
 
   const toggleIndex = () => setIndex(prevState => !prevState);
 
-  const { user, signInWithGoogle, signInWithGithub } = useUserContext();
+  const { user, signInWithGoogle, signInWithGithub, signInWithFacebook } =
+    useUserContext();
 
   useEffect(() => {
     if (user) navigate('/');
@@ -25,14 +26,16 @@ export const Auth = () => {
   return (
     <Container>
       {!index ? <SignIn /> : <SignUp />}
-      <div>
-        <span>OR</span>
-      </div>
+      <Divider>
+        <Span>OR</Span>
+      </Divider>
       <Btn onClick={signInWithGoogle}>Continue with Google</Btn>
       <Btn onClick={signInWithGithub}>Continue with GitHub</Btn>
-      <p onClick={toggleIndex}>
+      <Btn onClick={signInWithFacebook}>Continue with Facebook</Btn>
+
+      <P onClick={toggleIndex}>
         {!index ? 'New user? Click here ' : 'Already have an acount?'}
-      </p>
+      </P>
     </Container>
   );
 };

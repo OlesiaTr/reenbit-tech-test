@@ -29,3 +29,31 @@ export const Btn = styled.button`
     margin-top: 11px;
   }
 `;
+
+export const Divider = styled.div`
+  width: 350px;
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 auto 27px;
+
+  ::before,
+  ::after {
+    content: '';
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    flex: 1;
+    height: 7px;
+  }
+`;
+
+export const Span = styled.span`
+  text-align: center;
+  flex: 0.2 0 auto;
+`;
+
+export const P = styled.p`
+  font-weight: 500;
+
+  margin-top: 50px;
+  cursor: pointer;
+`;
