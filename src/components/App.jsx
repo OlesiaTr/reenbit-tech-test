@@ -1,5 +1,5 @@
 // Core
-import { lazy } from 'react';
+import { lazy, Suspense } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 // Components
@@ -13,13 +13,15 @@ const CharacterInfo = lazy(() => import('pages/CharacterInfo/CharacterInfo'));
 
 export const App = () => {
   return (
-    <Routes>
-      <Route path="/">
-        {/* <Route index element={<Home/> } /> */}
-        <Route path="/feed" element={<CharactersFeed />} />
-        <Route path="/character/:characterId" element={<CharacterInfo />} />
-        <Route path="*" element={<Navigate to={'/'} />} />
-      </Route>
-    </Routes>
+    <Suspense>
+      <Routes>
+        <Route path="/">
+          {/* <Route index element={<Home/> } /> */}
+          <Route path="/feed" element={<CharactersFeed />} />
+          <Route path="/character/:characterId" element={<CharacterInfo />} />
+          <Route path="*" element={<Navigate to={'/'} />} />
+        </Route>
+      </Routes>
+    </Suspense>
   );
 };
