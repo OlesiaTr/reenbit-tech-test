@@ -16,7 +16,7 @@ export const Container = styled.div`
 
   @media screen and (min-width: 1440px) {
     max-width: 1440px;
-    margin: 200px auto;
+    margin: 100px auto;
   }
 `;
 

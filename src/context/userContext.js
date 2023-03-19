@@ -15,6 +15,11 @@ import {
 } from 'firebase/auth';
 import { auth } from 'services/firebaseConfig';
 
+import { toast, Toaster } from 'react-hot-toast';
+
+// Components
+import { Loader } from 'components/Loader';
+
 export const UserContext = createContext({});
 
 export const useUserContext = () => useContext(UserContext);
@@ -49,7 +54,7 @@ export const UserContextProvider = ({ children }) => {
       updateProfile(newUser.currentUser);
       navigate('/');
     } catch (error) {
-      console.error(error.message);
+      setError(error);
     }
   };
 
@@ -61,7 +66,7 @@ export const UserContextProvider = ({ children }) => {
       setLoading(false);
       navigate('/');
     } catch (error) {
-      console.error(error.message);
+      setError(error);
     }
   };
 
@@ -73,7 +78,7 @@ export const UserContextProvider = ({ children }) => {
       setLoading(false);
       navigate('/');
     } catch (error) {
-      console.error(error.message);
+      setError(error);
     }
   };
 
@@ -85,7 +90,7 @@ export const UserContextProvider = ({ children }) => {
       setLoading(false);
       navigate('/');
     } catch (error) {
-      console.error(error.message);
+      setError(error);
     }
   };
 
@@ -97,7 +102,7 @@ export const UserContextProvider = ({ children }) => {
       setLoading(false);
       navigate('/');
     } catch (error) {
-      console.error(error.message);
+      setError(error);
     }
   };
 
@@ -105,6 +110,11 @@ export const UserContextProvider = ({ children }) => {
     signOut(auth);
     navigate('/login');
   };
+
+  useEffect(() => {
+    if (!error) return;
+    toast.error(error);
+  }, [error]);
 
   const contextDetails = {
     user,
@@ -117,6 +127,9 @@ export const UserContextProvider = ({ children }) => {
     signInWithFacebook,
     signOutUser,
   };
+
+  if (loading) return <Loader />;
+  if (error) return <Toaster position="top-right" />;
 
   return (
     <UserContext.Provider value={contextDetails}>
