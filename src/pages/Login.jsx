@@ -1,8 +1,8 @@
 // Components
 import { Auth } from 'components/Auth';
 
-const Home = () => {
+const Login = () => {
   return <Auth></Auth>;
 };
 
-export default Home;
+export default Login;

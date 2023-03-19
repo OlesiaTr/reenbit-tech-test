@@ -10,14 +10,13 @@ import {
   Form,
   Label,
   Input,
-  PswrdReset,
   Btn,
 } from './SignIn.styled';
 
 export const SignIn = () => {
   const emailRef = useRef();
   const pswrdRef = useRef();
-  const { signIn, restorePswrd } = useUserContext();
+  const { signIn } = useUserContext();
 
   const onSubmit = e => {
     e.preventDefault();
@@ -25,14 +24,6 @@ export const SignIn = () => {
     const pswrd = pswrdRef.current.value;
 
     if (email && pswrd) signIn(email, pswrd);
-  };
-
-  const onPswrdReset = async () => {
-    const email = emailRef.current.value;
-    // if (!email) return;
-
-    await restorePswrd(email);
-    email.Ref.current.value = '';
   };
 
   return (
@@ -58,7 +49,6 @@ export const SignIn = () => {
             ref={pswrdRef}
           />
         </Label>
-        <PswrdReset onClick={onPswrdReset}>Forgot Password?</PswrdReset>
         <Btn type="submit">Sign In</Btn>
       </Form>
     </Container>

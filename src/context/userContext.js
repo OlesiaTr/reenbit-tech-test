@@ -1,11 +1,12 @@
 // Core
 import { createContext, useContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import {
   createUserWithEmailAndPassword,
   GithubAuthProvider,
   GoogleAuthProvider,
   onAuthStateChanged,
-  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -21,6 +22,7 @@ export const UserContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLoading(true);
@@ -43,7 +45,8 @@ export const UserContextProvider = ({ children }) => {
         password
       );
       setLoading(false);
-      return updateProfile(newUser.currentUser);
+      updateProfile(newUser.currentUser);
+      navigate('/');
     } catch (error) {
       console.error(error.message);
     }
@@ -55,6 +58,7 @@ export const UserContextProvider = ({ children }) => {
       setError('');
       await signInWithEmailAndPassword(auth, email, password);
       setLoading(false);
+      navigate('/');
     } catch (error) {
       console.error(error.message);
     }
@@ -66,6 +70,7 @@ export const UserContextProvider = ({ children }) => {
       setError('');
       await signInWithPopup(auth, new GoogleAuthProvider());
       setLoading(false);
+      navigate('/');
     } catch (error) {
       console.error(error.message);
     }
@@ -77,14 +82,16 @@ export const UserContextProvider = ({ children }) => {
       setError('');
       await signInWithPopup(auth, new GithubAuthProvider());
       setLoading(false);
+      navigate('/');
     } catch (error) {
       console.error(error.message);
     }
   };
 
-  const signOutUser = () => signOut(auth);
-
-  const restorePswrd = email => sendPasswordResetEmail(auth, email);
+  const signOutUser = () => {
+    signOut(auth);
+    navigate('/login');
+  };
 
   const contextDetails = {
     user,
@@ -95,7 +102,6 @@ export const UserContextProvider = ({ children }) => {
     signInWithGoogle,
     signInWithGithub,
     signOutUser,
-    restorePswrd,
   };
 
   return (

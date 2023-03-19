@@ -81,17 +81,7 @@ export const Btn = styled.button`
   border-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    background-color: 1px solid #01b0c8;
+  :hover {
+    background-color: #01b0c8;
   }
-`;
-
-export const PswrdReset = styled.p`
-  font-size: 14px;
-  line-height: 16px;
-
-  color: #2c5282;
-
-  margin-bottom: 27px;
 `;
