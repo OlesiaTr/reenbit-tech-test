@@ -32,5 +32,12 @@ export const CharacterList = ({ data }) => {
 };
 
 CharacterList.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      species: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
 };

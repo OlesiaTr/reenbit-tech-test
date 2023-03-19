@@ -11,7 +11,8 @@ export const getCharactersFeed = async () => {
     const result = sortByName(data.results);
     return normalizedList(result);
   } catch (error) {
-    console.error('error:', error.message);
+    console.error('Error fetching character details:', error);
+    throw error;
   }
 };
 
@@ -21,7 +22,8 @@ export const getCharactersByName = async name => {
     const result = sortByName(data.results);
     return normalizedList(result);
   } catch (error) {
-    console.error('error:', error.message);
+    console.error('Error fetching character details:', error);
+    throw error;
   }
 };
 
@@ -30,7 +32,8 @@ export const getCharacterDetails = async id => {
     const { data } = await axios.get(`./character/${id}`);
     return data;
   } catch (error) {
-    console.error('error:', error.message);
+    console.error('Error fetching character details:', error);
+    throw error;
   }
 };
 
