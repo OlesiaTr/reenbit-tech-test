@@ -11,6 +11,7 @@ import {
 
 // Components
 import { Loader } from 'components/Loader';
+import { SignOut } from 'components/SignOut';
 import { Hero } from 'components/Hero';
 import { SearchBox } from 'components/SearchBox';
 import { CharacterList } from 'components/CharacterList';
@@ -75,6 +76,7 @@ const CharactersFeed = () => {
   return (
     <main>
       <Container>
+        <SignOut />
         <Hero />
         <SearchBox />
         {(characters.length > 0 && <CharacterList data={characters} />) ||
