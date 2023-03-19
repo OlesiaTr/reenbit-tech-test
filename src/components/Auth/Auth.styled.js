@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
 `;
 
 export const Btn = styled.button`
@@ -15,23 +16,27 @@ export const Btn = styled.button`
   line-height: 19px;
 
   padding: 15px 0 16px;
-  width: 350px;
+  width: 300px;
 
   border-radius: 5px;
   border-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   :hover {
-    background-color: #a5fd91;
+    background-color: #004a4b;
   }
 
   & + & {
     margin-top: 11px;
   }
+
+  @media screen and (min-width: 1020px) {
+    width: 350px;
+  }
 `;
 
 export const Divider = styled.div`
-  width: 350px;
+  width: 300px;
   display: flex;
   font-size: 12px;
   font-weight: 500;
@@ -43,6 +48,10 @@ export const Divider = styled.div`
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     flex: 1;
     height: 7px;
+  }
+
+  @media screen and (min-width: 1020px) {
+    width: 350px;
   }
 `;
 
@@ -56,4 +65,10 @@ export const P = styled.p`
 
   margin-top: 50px;
   cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  :hover {
+    color: #c23501;
+  }
 `;

@@ -4,7 +4,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import { useUserContext } from 'context/userContext';
 
 // Pages
-const Login = lazy(() => import('pages/Login'));
+const Login = lazy(() => import('pages/Login/Login'));
 const CharactersFeed = lazy(() =>
   import('pages/CharactersFeed/CharactersFeed')
 );

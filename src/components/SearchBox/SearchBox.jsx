@@ -12,12 +12,13 @@ export const SearchBox = () => {
     const nextParams = name !== '' ? { name } : {};
     setSearchParams(nextParams);
   };
+
   return (
     <Wrapper>
       <Icon />
       <Input
         type="text"
-        debounceTimeout={300}
+        debounceTimeout={500}
         value={characterName}
         placeholder="Filter by name..."
         onChange={e => updateQueryStr(e.target.value)}

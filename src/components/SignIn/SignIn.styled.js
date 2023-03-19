@@ -26,9 +26,13 @@ export const Login = styled.h1`
 `;
 
 export const Form = styled.form`
-  width: 350px;
+  width: 300px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 1020px) {
+    width: 350px;
+  }
 `;
 
 export const Label = styled.label`
@@ -81,6 +85,6 @@ export const Btn = styled.button`
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   :hover {
-    background-color: #01b0c8;
+    background-color: #00f0d0;
   }
 `;
