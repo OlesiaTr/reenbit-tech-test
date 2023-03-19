@@ -1,5 +1,8 @@
+// Components
+import { Auth } from 'components/Auth';
+
 const Home = () => {
-  return <></>;
+  return <Auth></Auth>;
 };
 
 export default Home;
