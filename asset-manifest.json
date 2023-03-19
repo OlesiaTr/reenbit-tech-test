@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reenbit-tech-test/static/css/main.b0a56b3a.css",
-    "main.js": "/reenbit-tech-test/static/js/main.23dcbe1e.js",
+    "main.js": "/reenbit-tech-test/static/js/main.ae15c590.js",
     "static/js/420.bb3fd83b.chunk.js": "/reenbit-tech-test/static/js/420.bb3fd83b.chunk.js",
     "static/js/506.00dea9d2.chunk.js": "/reenbit-tech-test/static/js/506.00dea9d2.chunk.js",
     "static/js/724.b05e5d6d.chunk.js": "/reenbit-tech-test/static/js/724.b05e5d6d.chunk.js",
@@ -13,7 +13,7 @@
     "static/media/hero-mob-x1.png": "/reenbit-tech-test/static/media/hero-mob-x1.094b133bac8a160da218.png",
     "index.html": "/reenbit-tech-test/index.html",
     "main.b0a56b3a.css.map": "/reenbit-tech-test/static/css/main.b0a56b3a.css.map",
-    "main.23dcbe1e.js.map": "/reenbit-tech-test/static/js/main.23dcbe1e.js.map",
+    "main.ae15c590.js.map": "/reenbit-tech-test/static/js/main.ae15c590.js.map",
     "420.bb3fd83b.chunk.js.map": "/reenbit-tech-test/static/js/420.bb3fd83b.chunk.js.map",
     "506.00dea9d2.chunk.js.map": "/reenbit-tech-test/static/js/506.00dea9d2.chunk.js.map",
     "724.b05e5d6d.chunk.js.map": "/reenbit-tech-test/static/js/724.b05e5d6d.chunk.js.map",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.b0a56b3a.css",
-    "static/js/main.23dcbe1e.js"
+    "static/js/main.ae15c590.js"
   ]
 }
