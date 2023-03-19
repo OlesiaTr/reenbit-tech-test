@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/reenbit-tech-test/static/css/main.b0a56b3a.css",
-    "main.js": "/reenbit-tech-test/static/js/main.96013efd.js",
+    "main.js": "/reenbit-tech-test/static/js/main.257f31eb.js",
     "static/js/821.037f234e.chunk.js": "/reenbit-tech-test/static/js/821.037f234e.chunk.js",
-    "static/js/965.5a9cb228.chunk.js": "/reenbit-tech-test/static/js/965.5a9cb228.chunk.js",
-    "static/js/506.9c608f6f.chunk.js": "/reenbit-tech-test/static/js/506.9c608f6f.chunk.js",
+    "static/js/965.2706a7f0.chunk.js": "/reenbit-tech-test/static/js/965.2706a7f0.chunk.js",
+    "static/js/506.18600db2.chunk.js": "/reenbit-tech-test/static/js/506.18600db2.chunk.js",
     "static/js/294.d074a5d2.chunk.js": "/reenbit-tech-test/static/js/294.d074a5d2.chunk.js",
     "static/js/252.a5acebc3.chunk.js": "/reenbit-tech-test/static/js/252.a5acebc3.chunk.js",
     "static/js/820.370b7f42.chunk.js": "/reenbit-tech-test/static/js/820.370b7f42.chunk.js",
@@ -15,16 +15,16 @@
     "static/media/hero-mob-x1.png": "/reenbit-tech-test/static/media/hero-mob-x1.094b133bac8a160da218.png",
     "index.html": "/reenbit-tech-test/index.html",
     "main.b0a56b3a.css.map": "/reenbit-tech-test/static/css/main.b0a56b3a.css.map",
-    "main.96013efd.js.map": "/reenbit-tech-test/static/js/main.96013efd.js.map",
+    "main.257f31eb.js.map": "/reenbit-tech-test/static/js/main.257f31eb.js.map",
     "821.037f234e.chunk.js.map": "/reenbit-tech-test/static/js/821.037f234e.chunk.js.map",
-    "965.5a9cb228.chunk.js.map": "/reenbit-tech-test/static/js/965.5a9cb228.chunk.js.map",
-    "506.9c608f6f.chunk.js.map": "/reenbit-tech-test/static/js/506.9c608f6f.chunk.js.map",
+    "965.2706a7f0.chunk.js.map": "/reenbit-tech-test/static/js/965.2706a7f0.chunk.js.map",
+    "506.18600db2.chunk.js.map": "/reenbit-tech-test/static/js/506.18600db2.chunk.js.map",
     "294.d074a5d2.chunk.js.map": "/reenbit-tech-test/static/js/294.d074a5d2.chunk.js.map",
     "252.a5acebc3.chunk.js.map": "/reenbit-tech-test/static/js/252.a5acebc3.chunk.js.map",
     "820.370b7f42.chunk.js.map": "/reenbit-tech-test/static/js/820.370b7f42.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0a56b3a.css",
-    "static/js/main.96013efd.js"
+    "static/js/main.257f31eb.js"
   ]
 }
